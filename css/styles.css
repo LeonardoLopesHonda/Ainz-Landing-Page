@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(to top, rgb(75, 71, 71), rgb(19, 18, 18)) no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+    margin: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.anime-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ainz-image {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.ainz-image img {
+    z-index: 1;
+}
+
+.anime-studio {
+    filter: invert(1);
+    width: 90%;
+}
+
+.anime-author {
+    font-size: 25px;
+    opacity: 90%;
+}
+
+.anime-name {
+    margin: auto;
+    width: 80%;
+}
+
+.anime-description {
+    font-size: 20px;
+    line-height: 170%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    background: #000;
+
+    gap: 2rem;
+}
+
+.programmer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programmer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programmer-socials ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4rem;
+}
+
+.programmer-socials nav ul li a svg {
+    width: 55px;
+}
+
+.watch-buttons {
+    display: flex;
+    flex-direction: column;
+
+    width: 85%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.button {
+    background: transparent;
+    border: solid rgb(48, 45, 45) 1px ;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(75, 71, 71);
+
+    color: #fff;
+}
+
+.watch-anime {
+    background-color: rgb(75, 71, 71);
+}
+
+.github {
+    filter: invert(1);
+}
+
+@media (min-width: 720px) {
+    body {
+        background: url('../assets/nazarick.png') no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        flex-direction: row;
+    }
+    
+    .anime-studio {
+        filter: invert(1);
+    }
+    
+    img {
+        width: 20%;
+    }
+}
