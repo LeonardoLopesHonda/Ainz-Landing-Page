@@ -9,11 +9,12 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to top, rgb(75, 71, 71), rgb(19, 18, 18)) no-repeat;
-    background-size: cover;
     text-align: center;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+
+    background: url('../assets/nazarick.png') no-repeat center center;
+    background-size: cover;
 }
 
 header {
@@ -22,8 +23,9 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    gap: 2rem;
-    margin: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 ul {
@@ -55,7 +57,7 @@ ul {
 
 .anime-studio {
     filter: invert(1);
-    width: 90%;
+    width: 60%;
 }
 
 .anime-author {
@@ -71,8 +73,7 @@ ul {
 .anime-description {
     font-size: 20px;
     line-height: 170%;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: auto;
 }
 
 footer {
@@ -86,6 +87,11 @@ footer {
     background: #000;
 
     gap: 2rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .programmer-info {
@@ -122,6 +128,8 @@ footer {
 }
 
 .button {
+    margin: auto;
+    text-decoration: none;
     background: transparent;
     border: solid rgb(48, 45, 45) 1px ;
     padding: 1rem;
@@ -134,28 +142,144 @@ footer {
 }
 
 .watch-anime {
-    background-color: rgb(75, 71, 71);
+    background-color: rgb(141, 66, 66);
 }
 
 .github {
     filter: invert(1);
 }
 
-@media (min-width: 720px) {
-    body {
-        background: url('../assets/nazarick.png') no-repeat;
-        background-size: cover;
+.container {
+    width: 100%;
+}
+
+/** xs **/
+@media (min-width: 475px) {
+    .ainz-image img {
+        width: 80%;
     }
 
-    header {
+    .container {
+        width: 475px;
+    }
+}
+
+/** sm **/
+@media (min-width: 640px) {
+    .container {
+        width: 640px;
+    }
+
+    .ainz-image img {
+        width: 60%;
+    }
+
+    .anime-name {
+        width: 70%;
+    }
+
+    .anime-description {
+        width: 70%;
+    }
+
+    .button {
+        width: 70%;
+    }
+}
+
+/** md **/
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .anime-studio {
+        width: 40%;
+    }
+
+    .ainz-image img {
+        width: 45%;
+    }
+
+    .anime-name {
+        width: 60%;
+    }
+
+    .anime-description {
+        width: 60%;
+    }
+
+    .button {
+        width: 60%;
+    }
+}
+
+/** lg **/
+@media (min-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+
+    .main-container {
         flex-direction: row;
     }
-    
+
     .anime-studio {
-        filter: invert(1);
+        width: 30%;
     }
-    
-    img {
-        width: 20%;
+
+    .anime-infos {
+        margin-top: 2rem;
+    }
+
+    .ainz-image img {
+        width: 70%;
+    }
+
+    .anime-description {
+        width: 80%;
+    }
+
+    .watch-buttons {
+        margin-top: 1rem;
+        flex-direction: row;
+    }
+}
+
+/** xl **/
+@media (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+
+    .anime-studio {
+        width: 25%;
+    }
+
+    .ainz-image img {
+        width: 60%;
+    }
+
+    .anime-name {
+        width: 50%;
+    }
+}
+
+/** 2xl **/
+@media (min-width: 1536px) {
+    .container {
+        width: 1536px;
+    }
+
+    .main-container {
+        margin-top: 5rem;
+    }
+
+    .ainz-image img {
+        width: 50%;
+    }
+
+    .anime-name {
+        width: 50%;
     }
 }
