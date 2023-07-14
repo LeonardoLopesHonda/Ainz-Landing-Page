@@ -5,7 +5,7 @@
 
 html, body {
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body {
@@ -15,6 +15,10 @@ body {
 
     background: url('../assets/nazarick.png') no-repeat center center;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -42,7 +46,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 2rem;
 }
 
 .ainz-image {
@@ -74,6 +77,8 @@ ul {
     font-size: 20px;
     line-height: 170%;
     margin: auto;
+
+    width: 80%;
 }
 
 footer {
@@ -88,10 +93,7 @@ footer {
 
     gap: 2rem;
 
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    margin-top: 3rem;
 }
 
 .programmer-info {
@@ -139,10 +141,27 @@ footer {
     background-color: rgb(75, 71, 71);
 
     color: #fff;
+    width: 80%;
 }
 
 .watch-anime {
     background-color: rgb(141, 66, 66);
+
+    transition: all .1s ease-in;
+}
+
+.watch-anime:hover {
+    background-color: rgb(167, 62, 62);
+    transform: scale(1.1);
+}
+
+.watch-trailer {
+    transition: all .1s ease-in;
+}
+
+.watch-trailer:hover {
+    background-color: rgb(117, 103, 103);
+    transform: scale(1.1);
 }
 
 .github {
@@ -161,6 +180,10 @@ footer {
 
     .container {
         width: 475px;
+    }
+
+    .button {
+        width: 70%;
     }
 }
 
@@ -228,10 +251,6 @@ footer {
         width: 30%;
     }
 
-    .anime-infos {
-        margin-top: 2rem;
-    }
-
     .ainz-image img {
         width: 70%;
     }
@@ -257,7 +276,7 @@ footer {
     }
 
     .ainz-image img {
-        width: 60%;
+        width: 50%;
     }
 
     .anime-name {
@@ -276,7 +295,7 @@ footer {
     }
 
     .ainz-image img {
-        width: 50%;
+        width: 40%;
     }
 
     .anime-name {
